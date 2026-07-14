@@ -35,7 +35,9 @@ const html = `<!doctype html>
   .hero{min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center;
     text-align:center; padding:64px 20px 72px; position:relative;
     background:radial-gradient(ellipse 75% 28% at 50% -6%, rgba(178,34,52,0.16) 0%, rgba(178,34,52,0) 55%), var(--bg);}
-  .logo{width:min(440px,80vw); height:auto; mix-blend-mode:screen; margin-bottom:8px;}
+  .logowrap{width:min(400px,78vw); border-radius:36px; overflow:hidden; margin-bottom:8px;
+    border:1px solid rgba(201,168,76,0.18); box-shadow:0 34px 90px rgba(0,0,0,0.65);}
+  .logo{display:block; width:100%; height:auto;}
   .tagline{font-family:var(--heading); color:var(--scarlet); font-size:clamp(24px,5vw,40px);
     letter-spacing:6px; margin-top:4px;}
   .lede{font-family:var(--body); color:#d7d3cb; font-size:clamp(18px,2.6vw,23px); line-height:1.5;
@@ -75,7 +77,7 @@ const html = `<!doctype html>
 </head>
 <body>
   <section class="hero">
-    <img class="logo" src="data:image/png;base64,${lockup}" alt="River City — Lock In">
+    <div class="logowrap"><img class="logo" src="data:image/png;base64,${lockup}" alt="River City — Lock In"></div>
     <div class="tagline">SHOW UP. LOCK IN.</div>
     <p class="lede">River City blocks the social media apps that pull your focus — the moment you tap your unit's NFC station. Tap in, go dark. Tap out, come back up.</p>
     <div class="cta">
