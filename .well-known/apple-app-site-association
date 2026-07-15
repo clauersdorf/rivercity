@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["BZ4PA9M7S2.com.rivercity.app"],
+        "components": [
+          { "/": "/lock", "comment": "Poster tag: open app and lock in" }
+        ]
+      }
+    ]
+  }
+}
