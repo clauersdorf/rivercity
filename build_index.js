@@ -3,7 +3,7 @@ const path = require('path');
 
 const APP_NAME = 'River City: Focus';
 // ---- When your App Store page is live, paste its URL here and re-run this script ----
-const APP_STORE_URL = ''; // e.g. 'https://apps.apple.com/app/idXXXXXXXXX'
+const APP_STORE_URL = 'https://apps.apple.com/app/id6790643082';
 
 const lockup = fs.readFileSync('/tmp/rc_lockup_web.png').toString('base64');
 
@@ -16,6 +16,7 @@ const html = `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6790643082">
 <title>${APP_NAME} — Tap in. Go dark. Lock in.</title>
 <meta name="description" content="River City blocks distracting social media apps the moment you tap an NFC station. One station, one tap. Show up. Lock in.">
 <meta property="og:title" content="${APP_NAME}">
